@@ -1,6 +1,6 @@
 {
-    "name": "Health Care",
-    "short_name": "FlaskApp",
+    "name": "Health Care App",
+    "short_name": "HealthCare",
     "description": "A simple Flask Progressive Web App",
     "start_url": "/",
     "display": "standalone",
