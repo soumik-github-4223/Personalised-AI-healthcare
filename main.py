@@ -1,7 +1,8 @@
-from flask import Flask, request, render_template, jsonify  # Import jsonify
+from flask import Flask, request, render_template, jsonify, send_from_directory
 import numpy as np
 import pandas as pd
 import pickle
+import os
 
 
 # flask app
@@ -94,6 +95,14 @@ def home():
     return render_template('index.html')
 
 
+# PWA assets routes
+@app.route('/manifest.json')
+def manifest():
+    return send_from_directory('static', 'manifest.json')
+
+@app.route('/service-worker.js')
+def service_worker():
+    return send_from_directory('static', 'service-worker.js')
 
 # about view funtion and path
 @app.route('/about')
@@ -115,6 +124,6 @@ def blog():
     return render_template("blog.html")
 
 
-# if __name__ == '__main__':
-#     app.run()
+if __name__ == '__main__':
+    app.run()
 
