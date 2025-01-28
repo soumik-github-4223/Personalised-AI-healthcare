@@ -1,7 +1,7 @@
 {
-    "name": "Health Care App",
-    "short_name": "HealthCare",
-    "description": "A simple Flask Progressive Web App",
+    "name": "AI HealthGuard",
+    "short_name": "AI-HealthGuard",
+    "description": "A Flask Progressive Web App",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
